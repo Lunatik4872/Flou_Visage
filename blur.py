@@ -14,7 +14,7 @@ def get_neighbours(np_picture, x, y, size):
 
     return neighbours,coo
 
-def flou(np_picture,x,y) :
+def blur(np_picture,x,y) :
     neighbours,coo = get_neighbours(np_picture,x,y,50)
 
     # propagation of the pixel's colour to its neighbours
